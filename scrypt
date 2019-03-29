@@ -67,3 +67,39 @@ function testCycle(n) {
     return x;
 }
 console.log(testCycle(7));
+
+/*function my_function(n) {
+    var x=n;
+    if(n!=1) {
+         return x+' '+my_function(n-1);
+      } else {
+          return 1;
+       }
+};*/
+
+/*Дано натуральное число n. Напишите рекурсивную функцию, которая возвращает строку чисел от 1 до n, разделенных пробелом.
+
+
+
+Основная сложность задачи заключается в том, что ее необходимо решить с использованием рекурсииv*/
+
+function my_function(n) {
+
+    var x=n;
+
+    if(n!=1) {
+        return my_function(n-1)+' '+x;
+    } else {
+        return 1;
+    }
+};
+
+/*function my_function(n) {
+    var x=n;
+    if(n!=1) {
+         return x+' '+my_function(n-1);
+      } else {
+          return 1;
+       }
+};*/
+
